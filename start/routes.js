@@ -23,3 +23,4 @@ Route.get('/', () => {
 Route.post('/register', 'RegisterController.index');
 Route.post('/auth', 'RegisterController.authentication');
 Route.post('/telegram', 'RegisterController.send').middleware(['auth']);
+Route.post('/mail', 'MailController.sendmail').middleware(['auth']);
